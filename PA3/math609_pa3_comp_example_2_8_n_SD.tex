@@ -1,0 +1,101 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.566in,
+at={(0.758in,0.481in)},
+scale only axis,
+xmin=1,
+xmax=8,
+xlabel style={font=\bfseries},
+xlabel={nx},
+ymin=1,
+ymax=8,
+ylabel style={font=\bfseries},
+ylabel={ny},
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={Convergence in 254 iterations for SD method},
+axis x line*=bottom,
+axis y line*=left
+]
+
+\addplot[%
+surf,
+shader=interp,colormap/jet,mesh/rows=8]
+table[row sep=crcr, point meta=\thisrow{c}] {%
+%
+x	y	c\\
+1	1	0\\
+1	2	0\\
+1	3	0\\
+1	4	0\\
+1	5	0\\
+1	6	0\\
+1	7	0\\
+1	8	0\\
+2	1	0\\
+2	2	0.0223522029136321\\
+2	3	0.0342722404914148\\
+2	4	0.0395435044146287\\
+2	5	0.039543504414631\\
+2	6	0.034272240491413\\
+2	7	0.0223522029136332\\
+2	8	0\\
+3	1	0\\
+3	2	0.0342722404914148\\
+3	3	0.0540856578926761\\
+3	4	0.0631430991930048\\
+3	5	0.0631430991930005\\
+3	6	0.0540856578926795\\
+3	7	0.034272240491413\\
+3	8	0\\
+4	1	0\\
+4	2	0.0395435044146287\\
+4	3	0.0631430991930048\\
+4	4	0.0741033373289999\\
+4	5	0.0741033373290052\\
+4	6	0.0631430991930005\\
+4	7	0.039543504414631\\
+4	8	0\\
+5	1	0\\
+5	2	0.039543504414631\\
+5	3	0.0631430991930005\\
+5	4	0.0741033373290052\\
+5	5	0.0741033373289999\\
+5	6	0.0631430991930048\\
+5	7	0.0395435044146287\\
+5	8	0\\
+6	1	0\\
+6	2	0.034272240491413\\
+6	3	0.0540856578926795\\
+6	4	0.0631430991930005\\
+6	5	0.0631430991930048\\
+6	6	0.0540856578926761\\
+6	7	0.0342722404914148\\
+6	8	0\\
+7	1	0\\
+7	2	0.0223522029136332\\
+7	3	0.034272240491413\\
+7	4	0.039543504414631\\
+7	5	0.0395435044146287\\
+7	6	0.0342722404914148\\
+7	7	0.0223522029136321\\
+7	8	0\\
+8	1	0\\
+8	2	0\\
+8	3	0\\
+8	4	0\\
+8	5	0\\
+8	6	0\\
+8	7	0\\
+8	8	0\\
+};
+\end{axis}
+\end{tikzpicture}%
