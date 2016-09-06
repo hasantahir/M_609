@@ -3,7 +3,7 @@
 % This program solves a linear system with a Hilbert matrix
 close all;clc;clear
 %% Starting with n = 19
-n = 19; % Choose any value of n from 19,39,79
+n = 79; % Choose any value of n from 19,39,79
 h = 1/(n+1);
 t = 0 : h : 1;
 %% Part a

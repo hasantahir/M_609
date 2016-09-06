@@ -31,7 +31,7 @@ x = zeros(n^2,1);
         
 spyc(A,30)
 %% LU Factorization
-A = (A(2:n^2+1,2:n^2+1));
+% A = (A(2:n^2+1,2:n^2+1));
 size(A)
 [L,U] = lu_decompose(A);
 %% Now follow Algorithm from "Numerical Methhods and Computing

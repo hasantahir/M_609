@@ -9,7 +9,7 @@
 clear;close all
 %% Data
 n = 21;
-t = linspace(0,pi,n+1);
+t = linspace(0,pi,n);
 T = linspace(0,pi,101);
 x = cos(t);
 x1 = -sin(t);
@@ -18,20 +18,20 @@ y = sin(t);
 y1 = cos(t);
 y2 = -sin(t);
 %% cos(t)
-z1 = spline3_coeff(n+1,t,x,'free');
+z1 = spline3_coeff(n,t,x,'free');
 S_1 = zeros(1,length(T));
 S1_1 = zeros(1,length(T));
 S2_1 = zeros(1,length(T));
 for i = 1 : length(T)
-    [S_1(i),S1_1(i),S2_1(i)] = spline3_eval_multi(n,t,x,z1,T(i));
+    [S_1(i),S1_1(i),S2_1(i)] = spline3_eval(n,t,x,z1,T(i));
 end
 %% Sin(t)
-z2 = spline3_coeff(n+1,t,y,'free');
+z2 = spline3_coeff(n,t,y,'free');
 S_2 = zeros(1,length(T));
 S1_2 = zeros(1,length(T));
 S2_2 = zeros(1,length(T));
 for i = 1 : length(T)
-    [S_2(i),S1_2(i),S2_2(i)] = spline3_eval_multi(n,t,y,z2,T(i));
+    [S_2(i),S1_2(i),S2_2(i)] = spline3_eval(n,t,y,z2,T(i));
 end
 close all
 plot(x,y,'mo',...
